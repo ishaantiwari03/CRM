@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+#txt1{
+	position: absolute;
+	font-size: 1.2rem;
+	right: 20px;
+	border: 10px;
+	bottom: 1px;
+	color:#FFF;
+	}
+#txt2{
+	position: absolute;
+	font-size: 1.2rem;
+	right: 5%;
+	top: 20px;
+	color: #FFF;
+	width:90%;
+	max-width:550px;
+	letter-spacing:.2em;
+	text-align:justify;
+	}
+#txt3{
+	position: absolute;
+	font-family:'Marmelad', sans-serif;
+	font-size: 1.5em;
+	right: 10%;
+	bottom: 200px;
+	color: #FFF;
+	width:90%;
+	max-width:500px;
+	}
+	
+#txt4{
+	position: absolute;
+	font-size: 1.2rem;
+	right: 10px;
+	border: 10px;
+	top: 300px;
+	color:#FFF;
+	}
+#btn-box{
+	position: absolute;
+	right: 150px;
+	top: 240px;
+	width:220px;
+	}
+img.round{
+	border-radius:50%;
+	}
+.shadow{
+	box-shadow:5px 5px 5px #333333;
+	}
+#back{
+	background:url('../img/back.jpg');
+	background-position:top center;
+	background-attachment:fixed;
+	background-size:cover;
+	}
+#back2{
+	background:url('../img/2.jpg');
+	background-position:top center;
+	background-attachment:fixed;
+	background-size:cover;
+	}
