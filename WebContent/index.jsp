@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-&nbsp;
+&nbsp; &nbsp;
     </div>
     <div class="col-sm-4">
     <br>
