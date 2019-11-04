@@ -4,6 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Show all Beat</title>
+<link rel="stylesheet" type="text/css" href="form.css">
 </head>
 <body>
 <jsp:include page="Header.jsp"></jsp:include>
@@ -11,7 +12,8 @@
 PreparedStatement pst=con.prepareStatement("select * from product_master");
 ResultSet rs=pst.executeQuery();
 if(rs.next()){%>
-<table border='1' width='400'>
+<div class="container">
+<table border='1' width='800'>
 <tr>
 				<td>ID</td>
 				<td>Product Code</td>
@@ -30,7 +32,7 @@ do{
 
 %>
 				
-				<tr>x
+				<tr>
 				<td><%=pid%></td>
 				<td><%=pcode%></td>
 				<td><%=pname %></td>
@@ -40,6 +42,7 @@ do{
 				</tr><%
 				}while(rs.next());%>
 				</table>
+				</div>
 				<%
 					}else{%>
 							<h2>Sorry! No Data</h2>

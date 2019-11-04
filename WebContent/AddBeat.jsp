@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Add Beat </title>
-<link href="css/bootstrap.css" rel="stylesheet">
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="form.css">
 
 </head>
 
 <body>
+<jsp:include page="Header.jsp"></jsp:include>
 <div class="container">
 	<div class="row"> 
     <form action="AddBeatInsert.jsp">

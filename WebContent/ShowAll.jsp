@@ -1,6 +1,7 @@
 <%@include file="dbcon.jsp"%>
 <%@page import="com.mgt.crm.util.DateUtil"%>
 
+<link rel="stylesheet" type="text/css" href="form.css">
 
 <%
 String q="SELECT cb.combo_id,cb.beat_name,cm.cname,cm.industry,cm.contact_name,cm.sub_industry,cm.contact,cm.city,pm.pcode,pm.pname,pm.stock,cb.entry_date FROM combo cb,customer_master cm,beat_master bm, product_master pm WHERE cb.cid=cm.cid AND cb.pid=pm.pid AND cb.beat_name=bm.beat_name";
@@ -12,7 +13,7 @@ String q="SELECT cb.combo_id,cb.beat_name,cm.cname,cm.industry,cm.contact_name,c
 PreparedStatement pst=con.prepareStatement(q);
 ResultSet rs=pst.executeQuery();
 if(rs.next()){%>
-<table  class="table table-bordered">
+<table border="1" class="table table-bordered">
 <tr class="active">
 				<td>#</td>
 				<td>Customer Name</td>

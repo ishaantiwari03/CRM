@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Customer Master</title>
+<link rel="stylesheet" type="text/css" href="form.css">
 
 </head>
 <jsp:include page="Header.jsp"></jsp:include>

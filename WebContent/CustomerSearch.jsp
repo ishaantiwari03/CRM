@@ -2,11 +2,14 @@
 <html>
 <head>
 <title>Search</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+
 </head>
 <body>
 <jsp:include page="Header.jsp"></jsp:include>
 <br>
 <br>
+<div class="container">
 <h4>Search by Customer Name</h4>
 <form action="CustomerSearchName.jsp">
 <div class="form-group">
@@ -41,5 +44,6 @@
   </div>
   <button type="submit">Search</button>
 </form>
+</div>
 </body>
 </html>

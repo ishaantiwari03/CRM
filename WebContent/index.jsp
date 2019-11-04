@@ -1,18 +1,25 @@
+
 <jsp:include page="Header.jsp"></jsp:include>
 <jsp:include page="Cache.jsp"></jsp:include>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
+<link rel="stylesheet" type="text/css" href="form.css">
+
+  
 &nbsp; &nbsp;
     </div>
     <div class="col-sm-4">
     <br>
-    <hr>
-        <h2>LOGIN</h2>
+        
         <p align="center" style=""color:#F00">${param.logmsg}</p>
         <p align="center" style=""color:#F00">${param.regmsg}</p>
         <p align="center" style=""color:#F00">${error}</p>
-        <form action="doLogin.jsp" class="form-horizontal">        
+        
+        
+        
+        
+        
+        <div class="container">
+        <form action="doLogin.jsp">   
+        <center><h2>LOGIN</h2></center>     
             <div class="form-group">
             <label for="uid"><b>User ID</b></label>
             <input type="text" placeholder="Enter User ID" class="form-control" name="uid" required>   
@@ -24,10 +31,17 @@
             
             <div class="form-group">
             <button type="submit" class="form-control">Login</button>       
-            </div>   
-          
-          
+            </div>  
         </form>
+        </div>
+        
+        
+        
+        
+     
+        
+        
+        
       </div>
   </div>
 </div>

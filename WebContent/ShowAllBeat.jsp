@@ -4,6 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Show all Beat</title>
+<link rel="stylesheet" type="text/css" href="form.css">
 </head>
 <body>
 <jsp:include page="Header.jsp"></jsp:include>
@@ -11,14 +12,16 @@
 PreparedStatement pst=con.prepareStatement("select * from beat_master");
 ResultSet rs=pst.executeQuery();
 if(rs.next()){%>
-<table border='1' width='400'>
+<div class="container">
+<table border='1' width='800'>
 <tr>
-				<td>ID</td>
+				
 				<td>Beat Name</td>
 				<td>City</td>
 				</tr>
 <%
 do{
+	
 	
 	String beat_name=rs.getString("beat_name");
 	String city=rs.getString("city");
@@ -29,14 +32,14 @@ do{
 %>
 				
 				<tr>
-				<td></td>
 				<td><%=beat_name%></td>
-				<td><%=city %></td>
+				<td><%=city%></td>
 				<td><a href='CustomerDelete.jsp?beat_name=<%=beat_name%>'  onclick=\"return confirm('Are You Sure to Remove User')\" >Delete</a></td>
 				<td><a href='CustomerEdit?beat_name=<%=beat_name%>' >Edit</a></td>
 				</tr><%
 				}while(rs.next());%>
 				</table>
+				</div>
 				<%
 					}else{%>
 							<h2>Sorry! No Data</h2>
